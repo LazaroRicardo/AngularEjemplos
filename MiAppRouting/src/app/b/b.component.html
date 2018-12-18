@@ -1,0 +1,10 @@
+<p>
+  {{pedidos|json}}!
+</p>
+
+
+<section>
+  <ul *ngFor="let aPedidos of pedidos">
+    <li>{{aPedidos.pid}} - {{aPedidos.descripcion}} - {{aPedidos.monto}}</li>
+  </ul>
+</section>
